@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link rel="stylesheet" href="jogo.css">
+        <meta charset="UTF-8">
+        <title>Título da Página</title>
+    </head>
+    
+    <body>
+        <div id="jogo">
+            <h1 id="titulo">Atom Clicker</h1>
+            <div id="ladoEsquerdo">
+                <img src="./imagens/atomo.png" class="atomo">
+            </div>
+            <h1 id="titulo2">Melhorias</h1>
+            <p id="pontos">pontos: 0</p>
+            <p id="atomoAtual">atomo: H1</p>
+            <div id="melhorias">
+                <section id="proton" class="melhoria">
+                    <span>mais protons - </span>
+                    <p class="js-preco-proton"> 10 energia</p>
+                </section>
+                <section id="neutrons" class="melhoria">
+                    <span>mais neutron - </span>
+                    <p class="js-preco-neutron"> 25 energia</p>
+                </section>
+                <section id="eletrons" class="melhoria">
+                    <span>mais eletrons - </span>
+                    <p class="js-preco-eletron"> 50 energia</p>
+                </section>
+                <section id="reinciar" class="melhoria">
+                    <span>prestigio - </span>
+                    <p class="js-preco-prestigio"> 0 energia - </p>
+                    <p class="js-preco-atomo"> B-10/B-11</p>
+                </section>
+            </div>
+        
+        </div>
+    </body>
+    <script src="jogo.js"></script>
+    <script src="autoJogo.js"></script>
+</html>

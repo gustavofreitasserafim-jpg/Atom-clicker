@@ -1,0 +1,100 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0px;
+    background-color: #cccccc
+}
+html {
+    height:100%;
+}
+#jogo {
+    height:745px;
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:auto auto auto;
+}
+#titulo, #titulo2 {
+    height:50px;
+    grid-row:1;
+    justify-self:center;
+    margin-left:100px;
+    margin:50px;
+    margin-bottom:0px ;
+    padding-bottom:0px ;
+}
+#titulo2 {
+    grid-column:2;
+}
+#ladoEsquerdo {
+    margin:0px;
+    grid-column:1;
+    height:300px;
+    width:1fr;
+    display:grid;
+    justify-content: center;
+    padding:0px;
+}
+#melhorias {
+    margin:0px;
+    padding:0px;
+    height:300px;
+    width:1fr;
+    grid-column:2;
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr;
+    gap:30px;
+}
+img {
+    display:inline-block;
+    height: 300px;
+    margin:0px;
+    padding:0px;
+}
+#pontos, #atomoAtual{
+    justify-self: center;
+    align-self: center;
+    margin:10px;
+    padding:10px 100px;
+    background-color:#999;
+    grid-row: 3;
+    grid-column: 1;
+    font-variant-numeric: tabular-nums;
+    width: 180px;
+    text-align:center;
+}
+
+.melhoria p {
+    margin:0px;
+    justify-self:center;
+
+}
+.melhoria span {
+    display:inline-block;
+
+    text-align: start;
+}
+.melhoria{
+    display:flex;
+    flex-wrap:nowrap ;
+    width:350px;
+    padding:10px 50px;
+    background-color: #999;
+    justify-self:center;
+}
+img:active {
+    animation: click .1s;
+}
+#atomoAtual {
+    grid-row:3;
+    grid-column: 2;
+}
+@keyframes click {
+    from {
+        width:290px;
+        height:290px;
+    }
+    to {
+        width:300px;
+        height: 300px;;
+    }
+}
